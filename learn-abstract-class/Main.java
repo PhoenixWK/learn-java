@@ -3,7 +3,7 @@ import java.math.BigDecimal;
 /**
  * Main
  */
-public class Main {
+/*public class Main {
 
 	public static void main(String[] args) {
 		Account a = new NormalBankAccount(AccountType.NORMAL, "123456", "NGUYEN VAN A", 100 , BigDecimal.valueOf(100000));
@@ -14,4 +14,20 @@ public class Main {
 
 	}
 
+}*/
+
+abstract class MyAbstractClass {
+	public MyAbstractClass() {
+		System.out.println("Inside MyAbstractClass constructor");
+	}
+}
+
+public class Main extends MyAbstractClass {
+	public Main() {
+		System.out.println("Inside Main constructor");
+	}
+
+	public static void main(String[] args) {
+		Main a = new Main();
+	}
 }
